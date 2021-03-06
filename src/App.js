@@ -7,11 +7,11 @@ import Post from "./components/post/Post";
 function App() {
   return (
     <div>
-      <aside>
+      <aside className="aside">
         <Following />
         <Follow />
       </aside>
-      <main>
+      <main className="main">
         <Wall />
         <Post />
       </main>

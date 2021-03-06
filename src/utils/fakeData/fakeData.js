@@ -109,13 +109,13 @@ const TIME_LINE = [
 ];
 
 const USER_IMG_URL = {
-  user11: "img/abstract-user-flat-4.svg",
-  user33: "img/abstract-user-flat-1.svg",
-  someOneElse: "img/abstract-user-flat-3.svg",
-  maria: "img/abstract-user-flat-2.svg",
-  patrick: "img/abstract-user-flat-4.svg",
-  ursula: "img/abstract-user-flat-3.svg",
-  erik: "img/abstract-user-flat-2.svg",
+  me: "imgs/abstract-user-flat-4.svg",
+  anna: "imgs/abstract-user-flat-1.svg",
+  someOneElse: "imgs/abstract-user-flat-3.svg",
+  maria: "imgs/abstract-user-flat-2.svg",
+  patrick: "imgs/abstract-user-flat-4.svg",
+  ursula: "imgs/abstract-user-flat-3.svg",
+  erik: "imgs/abstract-user-flat-2.svg",
 };
 
 export { FOLLOWED_USERS_LIST, TIME_LINE, GLOBAL_USERS, USER_IMG_URL };
