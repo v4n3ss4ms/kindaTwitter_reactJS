@@ -20,16 +20,18 @@ function Wall() {
   return (
     <div>
       {timeLine.length > 0 ? (
-        <div>
+        <ul className="wall">
           {timeLine.map((e) => {
             return (
-            <div key={e.date}>
-                <div><img src={getUserImgUrl(e.id)} alt={e.id}/></div>
-                <div>{millisecsToString(e.date)}</div>
-                <div>{e.msg}</div>
-            </div>);
+            <li className="item" key={e.date}>
+                <div className="item__img"><img src={getUserImgUrl(e.id)} alt={e.id}/></div>
+                <div>
+                  <p className="item__date">{millisecsToString(e.date)}</p>
+                  <p className="item__msg">{e.msg}</p>
+                </div>
+            </li>);
           })}
-        </div>
+        </ul>
       ) : (
         "Your time line is empty"
       )}

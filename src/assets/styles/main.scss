@@ -1,5 +1,5 @@
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.kt-main {
+    @include flex-column;
+    background-color: var(--c-primary-light);
+    padding: 30px;
 }

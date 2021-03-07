@@ -1,6 +1,6 @@
 import "./Follow.scss";
 function Follow() {
-  return <div>follow</div>;
+  return <div className="follow">follow</div>;
 }
 
 export default Follow;

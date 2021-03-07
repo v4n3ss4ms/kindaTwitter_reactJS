@@ -14,8 +14,8 @@ function Following() {
   return (
     <div>
       {followedUsersList.length > 0 ? (
-        <ul>
-          {followedUsersList.map((e) => (e !== "me") ? <li key={e}>{e}</li> : null)}
+        <ul className="following">
+          {followedUsersList.map((e) => (e !== "me") ? <li  className="following__item" key={e}>{e}</li> : null)}
         </ul>
       ) : (
         "You are not following anybody"

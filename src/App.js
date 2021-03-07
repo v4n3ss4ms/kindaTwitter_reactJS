@@ -6,12 +6,12 @@ import Post from "./components/post/Post";
 
 function App() {
   return (
-    <div>
-      <aside className="aside">
+    <div className="kinda-twitter">
+      <aside className="kt-aside">
         <Following />
         <Follow />
       </aside>
-      <main className="main">
+      <main className="kt-main">
         <Wall />
         <Post />
       </main>

@@ -1,0 +1,8 @@
+.kinda-twitter {
+  background-color: var(--c-primary);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  height: 100vh;
+  padding: 30px;
+}
