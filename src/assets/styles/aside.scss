@@ -1,6 +1,5 @@
 .kt-aside {
-    @include flex-column;
-    background-color: var(--c-secondary-light);
-    padding: 10px;
-
+  @include flex-column;
+  background-color: var(--c-secondary-light);
+  padding: 10px;
 }

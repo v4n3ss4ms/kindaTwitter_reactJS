@@ -1,13 +1,13 @@
 .following {
-    margin-bottom: 30px;
-    padding:20px;
-    background-color: var(--c-secondary-dark);
-    &__item {
-        padding: 10px;
-        border: 1px solid var(--c-secondary);
-        margin-bottom: 5px;
-        &:last-child {
-            margin-bottom: 0;
-        }
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--c-secondary-dark);
+  &__item {
+    padding: 10px;
+    border: 1px solid var(--c-secondary);
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 }

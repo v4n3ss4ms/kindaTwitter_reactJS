@@ -5,7 +5,9 @@ import "./Wall.scss";
 function Wall() {
   const [followedUsersList, setFollowedUsersList] = useState(store.getState().followedUsersList);
   const filterUsers = (user) => followedUsersList.includes(user.id);
-  const [timeLine, setTimeLine] = useState(store.getState().timeLine.filter(filterUsers));
+  const [timeLine, setTimeLine] = useState(
+    store.getState().timeLine.filter(filterUsers)
+  );
 
   useEffect(() => {
     const unsubscribe = store.subscribe(() => {
@@ -23,13 +25,16 @@ function Wall() {
         <ul className="wall">
           {timeLine.map((e) => {
             return (
-            <li className="item" key={e.date}>
-                <div className="item__img"><img src={getUserImgUrl(e.id)} alt={e.id}/></div>
+              <li className="item" key={e.date}>
+                <div className="item__img">
+                  <img src={getUserImgUrl(e.id)} alt={e.id} />
+                </div>
                 <div>
                   <p className="item__date">{millisecsToString(e.date)}</p>
                   <p className="item__msg">{e.msg}</p>
                 </div>
-            </li>);
+              </li>
+            );
           })}
         </ul>
       ) : (
