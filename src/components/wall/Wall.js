@@ -1,21 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import store from "../../store/store";
 import { getUserImgUrl } from "../../utils/utils";
 import "./Wall.scss";
 function Wall() {
   const [followedUsersList, setFollowedUsersList] = useState(store.getState().followedUsersList);
   const filterUsers = (user) => followedUsersList.includes(user.id);
-  const [timeLine, setTimeLine] = useState(
-    store.getState().timeLine.filter(filterUsers)
-  );
+  const [timeLine, setTimeLine] = useState(store.getState().timeLine.filter(filterUsers));
 
-  useEffect(() => {
-    const unsubscribe = store.subscribe(() => {
-      setFollowedUsersList(store.getState().followedUsersList);
-      setTimeLine(store.getState().timeLine.filter(filterUsers));
-    });
-    return unsubscribe;
-  }, []);
+  store.subscribe(() => {
+    setFollowedUsersList(store.getState().followedUsersList);
+    setTimeLine(store.getState().timeLine.filter(filterUsers));
+  });
 
   const millisecsToString = (date) => new Date(date).toLocaleString();
 

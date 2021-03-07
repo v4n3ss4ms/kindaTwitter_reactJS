@@ -1,0 +1,14 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    height: 75px;
+    padding: 5px;
+    resize: none;
+  }
+  &__btn {
+    margin-top: 15px;
+    padding: 10px 5px;
+    width: 20%;
+  }
+}

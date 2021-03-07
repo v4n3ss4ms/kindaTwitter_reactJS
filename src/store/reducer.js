@@ -6,16 +6,16 @@ const INITIAL_STATE = {
   followedUsersList: getFollowedUsersList(),
 };
 
-const addUser = (followedUsersList, user) => followedUsersList.concat(user);
-const addMsg = (timeLine, msg ) => msg.concat(timeLine);
+const addUser = (followedUsersList, user) => followedUsersList.includes(user) ? [...followedUsersList] : [...followedUsersList, user];
+const addMsg = (timeLine, msg ) => [msg, ...timeLine];
 
 
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ADD_USER:
-      return { ...state, cards: addUser(state.followedUsersList, action.payload) };
+      return { ...state, followedUsersList: addUser(state.followedUsersList, action.payload) };
     case ADD_MSG:
-      return { ...state, cards: addMsg(state.timeLine, action.payload) };
+      return { ...state, timeLine: addMsg(state.timeLine, action.payload) };
     default:
       return state;
   }

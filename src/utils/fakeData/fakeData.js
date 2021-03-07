@@ -1,4 +1,4 @@
-const FOLLOWED_USERS_LIST = ["me", "anna", "someOneElse"];
+const FOLLOWED_USERS_LIST = ["me", "anna", "paul"];
 const GLOBAL_USERS = ["maria", "patrick", "ursula", "erik"];
 const TIME_LINE = [
   {
@@ -32,19 +32,19 @@ const TIME_LINE = [
     msg: "Give me 5",
   },
   {
-    id: "someOneElse",
+    id: "paul",
     date: 1612040475754,
-    msg: "This is an amazing apple pie",
+    msg: "What a wonderful day",
   },
   {
-    id: "someOneElse",
+    id: "paul",
     date: 1615640475754,
-    msg: "Happy birthday",
+    msg: "Hi! This is a message",
   },
   {
-    id: "someOneElse",
+    id: "paul",
     date: 1613140475754,
-    msg: "Give me 5",
+    msg: "Paul says something",
   },
   {
     id: "maria",
@@ -111,7 +111,7 @@ const TIME_LINE = [
 const USER_IMG_URL = {
   me: "imgs/abstract-user-flat-4.svg",
   anna: "imgs/abstract-user-flat-1.svg",
-  someOneElse: "imgs/abstract-user-flat-3.svg",
+  paul: "imgs/abstract-user-flat-3.svg",
   maria: "imgs/abstract-user-flat-2.svg",
   patrick: "imgs/abstract-user-flat-4.svg",
   ursula: "imgs/abstract-user-flat-3.svg",
