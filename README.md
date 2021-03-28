@@ -28,12 +28,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Bugs
-
-### Wall posts when follow a new user
-
-When you follow a new user, posts are not updated but once you follow a new one the time line shows the previous followed user or if you write a post the time line is updated with new post and the previous followed user's posts. 
-
 ## Nice to have
 
 ### Tests
